@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+     <meta charset="UTF-8">
+     <title>calculator</title>
+	 <style>
+	 h1{
+  text-align: center;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  margin: auto;
+  width: 352px;
+  padding: 10px;
+  background-color:none;
+  height: 410px;
+  background-color: papayawhip;
+}
+.header{
+  background-color: peachpuff;
+  padding: 5px;
+  color: #00000;
+  text-align: center;
+}
+.result{
+  font-size: 24px;
+  padding: 24px 5px;
+  font-weight: 700;
+  text-align: right;
+  width: 96%;
+  border: none;
+  background-color: khaki;
+}
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.conflict
+{
+  display: inline-block;
+  width: 100%;
+}
+.global{
+ padding: 15px;
+ font-weight: bold;
+ font-size: 16px;
+ border: none;
+ border-radius: 3px;
+ background-color: blue;
+ float: left;
+ width: 23.5%;
+ margin: 0 2px;
+ /*border: 1px solid #000;*/
+}
+.conflict .left,
+.conflict .right{
+  float: left;
+  position: relative;
+}
+.left{
+  width: 74%;
+}
+.right{
+  width: 24%;
+}
+.big{
+  padding: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  background-color: green;
+  float: left;
+  width: 100;
+  margin: 0 2px;
+}
+.small{
+  padding: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  background-color: khaki;
+  float: left;
+  width: 60px;
+  margin: 0 2px;
+}
+.plus{
+  height: 48px;
+  width: 80px;
+}
+.equal {
+  background-color: blue;
+  width:85px;
+}
+.red{
+  background-color: #F50258
+}
+.grey{
+  background-color: red
+}
+.white-text{
+  color: #fff
+}
+
+  
+
+     </style>
+  </head>
+  <body>
+
+<h1>Calculator Design Using HTML Layout</h1>
+    <div class="container">
+      <div class="header">Calculator</div>
+      <input type="text" class="result">
+      <div class="first-row">
+        <input type="button" name="" value="&radic;" class="global">
+        <input type="button" name="" value="(" class="global">
+        <input type="button" name="" value=")" class="global">
+        <input type="button" name="" value="%" class="global">
+      </div>
+      <div class="second-row">
+        <input type="button" name="" value="7" class="global">
+        <input type="button" name="" value="8" class="global">
+        <input type="button" name="" value="9" class="global">
+        <input type="button" name="" value="/" class="global">
+      </div>
+      <div class="third-row">
+        <input type="button" name="" value="4" class="global">
+        <input type="button" name="" value="5" class="global">
+        <input type="button" name="" value="6" class="global">
+        <input type="button" name="" value="X" class="global">
+      </div>
+      <div class="fourth-row">
+        <input type="button" name="" value="1" class="global">
+        <input type="button" name="" value="2" class="global">
+        <input type="button" name="" value="3" class="global">
+        <input type="button" name="" value="-" class="global">
+      </div>
+      <div class="conflict">
+        <div class="left">
+          <input type="button" name="" value="0" class=" big">
+          <input type="button" name="" value="." class=" small">
+          <input type="button" name="" value="Del" class="red small white-text top-margin">
+          <input type="button" name="" value="=" class=" equal white-text big top-margin">
+        </div>
+        <div class="right">
+          <input type="button" name="" value="+" class="global grey plus">
+        </div>
+      </div>
+    </div>
+	</body>
