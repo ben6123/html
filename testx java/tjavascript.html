@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   <meta charset="UTF-8">
+   <title>ex1</title>
+   <style>
+ 
+   body {
+background-image: url("images/new.jfif");
+background-color:red;}
+   
+   </style>
+   </head>
+ 
+<body>
+
+<p>This Example calls a function which performs a calculation, and returns the result:</p>
+<p id="demo2"></p>
+<script>
+function myFunction(a, b) {
+    return a * b;
+}
+document.getElementById("demo2").innerHTML = myFunction(4, 3);
+</script>
+
+
+<p id="demo1">JavaScript can change the style of an HTML element.</p>
+<button type="button" onclick="myFunction()">Click Me!</button>
+<script>
+function myFunction() {
+    var x = document.getElementById("demo1");
+    x.style.fontSize = "25px";           
+    x.style.color = "red"; 
+}
+</script>
+
+
+<p id="demo">JavaScript can change HTML content.</p>
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">
+Click Me!</button>
+
+<p>Creating a JavaScript Variable.</p>
+<p id="demo"></p>
+<script>
+var car = "Fiat";
+document.getElementById("demo").innerHTML = car;
+</script>
+
+<script>
+var car = {type:"Fiat", model:"500", color:"white"};
+document.getElementById("demo").innerHTML = car.type;
+</script>
+
+<p>Creating a JavaScript Object.</p>
+<p id="demo3"></p>
+<script>
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+document.getElementById("demo3").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+</body> 
